@@ -1,0 +1,38 @@
+components:
+  schemas:
+    User:
+      type: object
+      properties: 
+        _id:
+          type: ObjectId
+          description: Id autogenerado por MongoDB 
+        firstName:
+          type: String
+          description: Nombre del usuario
+        lastName:
+          type: String
+          description: Apellido del usuario
+        email:
+          type: String
+          description: Email del usuario
+        age:
+          type: Number
+          description: Edad del usuario
+        rol:
+          type: String
+          description: Rol del usuario (Admin,Premium,User)
+        cart:
+          type: String
+          description: Id del carrito del usuario
+        password:
+          type: String
+          description: Contraseña del usuario
+      example:
+        _id: ObjectId("647fa8c9e46dbc5a20320181")
+        firstName: Usuario de prueba 1
+        lastName: Apellido de prueba 1
+        email: correodeprueba1@gmail.com
+        age: 18
+        rol: User
+        cart: 182fa8c9e46dbc5a2032e925 
+        password: 123456
